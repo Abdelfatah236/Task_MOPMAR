@@ -1,0 +1,47 @@
+﻿@model List<Employee>
+@{
+    ViewData["Title"] = "Employee List";
+}
+<h1>Employee List</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>National ID</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>Governorate</th>
+            <th>Center</th>
+            <th>Village</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.NationalId</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.MiddleName</td>
+                <td>@employee.LastName</td>
+                <td>@(employee.Gender == 0 ? "Male" : "Female")</td>
+                <td>@employee.Salary</td>
+                <td>@employee.GovernorateId</td>
+                <td>@employee.CenterId</td>
+                <td>@employee.VillageId</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@employee.Id">Update</a> |
+                    <a asp-action="Details" asp-route-id="@employee.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@employee.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

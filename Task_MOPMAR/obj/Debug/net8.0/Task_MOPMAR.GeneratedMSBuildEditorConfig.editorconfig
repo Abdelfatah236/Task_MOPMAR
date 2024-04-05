@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Task_MOPMAR
+build_property.RootNamespace = Task_MOPMAR
+build_property.ProjectDir = C:\Users\dell\Desktop\Asp\Task_MOPMAR\Task_MOPMAR\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dell\Desktop\Asp\Task_MOPMAR\Task_MOPMAR
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/AddAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/AddEditor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/AddWriter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRXcml0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/Partialview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0aWFsdmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Employee/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Excel/DownloadExcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxcRG93bmxvYWRFeGNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Role/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dell/Desktop/Asp/Task_MOPMAR/Task_MOPMAR/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-104072go6y

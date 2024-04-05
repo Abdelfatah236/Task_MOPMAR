@@ -1,0 +1,119 @@
+﻿@model EmployeeViewModel
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+
+<form asp-action="Update">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="NationalId" class="control-label"></label>
+        <input asp-for="NationalId" class="form-control" />
+        <span asp-validation-for="NationalId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MiddleName" class="control-label"></label>
+        <input asp-for="MiddleName" class="form-control" />
+        <span asp-validation-for="MiddleName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Gender" class="control-label"></label>
+        <select asp-for="Gender" class="form-control">
+            <option value="0" selected>ذكر</option>
+            <option value="1">أنثى</option>
+        </select>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Salary" class="control-label"></label>
+        <input asp-for="Salary" class="form-control" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GovernorateId" class="control-label"></label>
+        <select asp-for="GovernorateId" class="form-control" asp-items="@(new SelectList(ViewBag.Governorates, "Id", "Name"))">
+            <option value="">-- Select Governorate --</option>
+        </select>
+        <span asp-validation-for="GovernorateId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CenterId" class="control-label"></label>
+        <select asp-for="CenterId" class="form-control" asp-items="@(new SelectList(ViewBag.Centers, "Id", "Name"))">
+            <option value="">-- Select Center --</option>
+        </select>
+        <span asp-validation-for="CenterId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VillageId" class="control-label"></label>
+        <select asp-for="VillageId" class="form-control" asp-items="@(new SelectList(ViewBag.Villages, "Id", "Name"))">
+            <option value="">-- Select Village --</option>
+        </select>
+        <span asp-validation-for="VillageId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#GovernorateId').change(function () {
+                var governorateId = $(this).val();
+                if (governorateId) {
+                    $.ajax({
+                        url: '@Url.Action("GetCentersByGovernorate", "Employee")',
+                        type: 'GET',
+                        data: { governorateId: governorateId },
+                        success: function (data) {
+                            $('#CenterId').empty().append('<option value="">Select Center</option>');
+                            $.each(data, function (index, center) {
+                                $('#CenterId').append('<option value="' + center.value + '">' + center.text + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('#CenterId').empty().append('<option value="">Select Center</option>');
+                    $('#VillageId').empty().append('<option value="">Select Village</option>');
+                }
+            });
+
+            $('#CenterId').change(function () {
+                var centerId = $(this).val();
+                if (centerId) {
+                    $.ajax({
+                        url: '@Url.Action("GetVillagesByCenter", "Employee")',
+                        type: 'GET',
+                        data: { centerId: centerId },
+                        success: function (data) {
+                            $('#VillageId').empty().append('<option value="">Select Village</option>');
+                            $.each(data, function (index, village) {
+                                $('#VillageId').append('<option value="' + village.value + '">' + village.text + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('#VillageId').empty().append('<option value="">Select Village</option>');
+                }
+            });
+        });
+    </script>
+}

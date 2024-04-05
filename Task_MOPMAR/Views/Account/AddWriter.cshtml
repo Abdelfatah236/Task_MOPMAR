@@ -1,0 +1,13 @@
+﻿@model RegisterUserViewModel
+@{
+    ViewData["Title"] = "AddWriter";
+}
+<h1>AddWriter</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddWriter">
+            <partial name="Partialview" model="@Model" />
+        </form>
+    </div>
+</div>

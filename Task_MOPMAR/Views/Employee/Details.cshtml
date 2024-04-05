@@ -1,0 +1,44 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Employee List";
+}
+<h1>Employee List</h1>
+<p>
+    <a asp-action="Details">Detail</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>National ID</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>Governorate</th>
+            <th>Center</th>
+            <th>Village</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>   
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.NationalId</td>
+                <td>@Model.FirstName</td>
+                <td>@Model.MiddleName</td>
+                <td>@Model.LastName</td>
+                <td>@(Model.Gender == 0 ? "Male" : "Female")</td>
+                <td>@Model.Salary</td>
+                <td>@Model.GovernorateId</td>
+                <td>@Model.CenterId</td>
+                <td>@Model.VillageId</td>
+                <td>
+                    <a asp-action="index">Back to List</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
